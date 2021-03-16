@@ -1,0 +1,42 @@
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    font:normal 75% Arial, Helvetica, sans-serif;
+  }
+  
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background:linear-gradient(to right, rgba(16, 0, 235, 0.3), rgba(15, 0, 61, 0.3)), url('https://cdn.discordapp.com/attachments/607373705819193346/821262843269218324/wp5474651.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  
+  .avatar {
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
